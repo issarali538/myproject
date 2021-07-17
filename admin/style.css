@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Kalam&display=swap');
+/* header file css  */
+#admin-header h2{
+    font-family: 'Kalam', cursive;
+}
+#admin-header  img{
+    border-radius: 50px;
+}
+#admin-header .col-3,
+#admin-header .col-7,
+#admin-header .col-2
+{
+    background-color: #95a5a6;
+    color: white;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+}
+#admin-header a{
+    text-decoration: none;
+    color: white;
+}
+#admin-header .dropdown .dropdown-menu li{
+    font-family: 'Kalam', cursive;
+}
+#admin-header .nav li:hover
+{
+    background-color: #7f8c8d;
+}

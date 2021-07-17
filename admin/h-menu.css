@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Kalam&display=swap');
+header file css 
+#admin-header h2{
+    font-family: 'Kalam', cursive;
+}
+#admin-menu a{
+    text-decoration: none;
+    color: white;
+}
+#admin-menu .active{
+   background-color: #2ecc71;
+}
+#admin-menu .nav-item{
+  transition-property: background-color;
+  transition-duration: 0.5s;
+ }
+ #admin-menu .nav-item:hover{
+    background-color: #2ecc71;
+ }
+#admin-menu #normal-dropdwon a{
+    color: black;
+}

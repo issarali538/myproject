@@ -1,0 +1,67 @@
+/* google font ------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* google font ------- */
+/* header file css --------- */
+*{
+    font-family: 'Merriweather', serif;
+}
+body{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #1abc9c;
+    color: white;
+}
+#header a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#header a:hover,
+#header .active{
+    background-color: #16a085;
+}
+/* header file css --------- */
+
+/* index file css ----------- */
+#index-cards{
+    padding: 63px 0px;
+    text-align: center;
+    background-color: #1abc9c;
+    overflow: none;
+}
+#index-cards h2{
+    color: white;
+    display: inline-block;
+    padding-left: 10px;
+    border-left: 3px solid white;
+}
+#index-cards .card-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+#index-cards .card 
+{
+    margin: 5px auto;
+}
+/* index file css ----------- */
+
+/* footer css ... */
+footer{
+   color: #1abc9c;
+}
+/* footer css ... */
+
+/* reser file -- */
+#reser-form h1{
+    color: white;
+}
+/* reser file -- */
+ /* footer  */

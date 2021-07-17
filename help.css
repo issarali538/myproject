@@ -1,0 +1,18 @@
+/* quick then font  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+/* help page css  */
+#step-1{
+   content: "Step-1";
+   color: #198754;
+   font-size: 22px;
+   font-family: "Quicksand";
+}
+.step-para{
+   box-shadow: 3px 3px 5px #bb9494;
+   font-family: 'Quicksand', sans-serif;
+   color: #7fbd7f;
+} 
+.step-para a{
+   font-family: "Quicksand";
+}
+/* help page css 
