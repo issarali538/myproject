@@ -9,7 +9,7 @@ include "header.php";
     <div class="row">
         <!-- entery panel  -->
         <div class="col-6">
-            <h4 class="p-2 rounded border bg-light">Entery Panel</h4>
+            <h4 class="p-2 rounded border bg-light">Interview Point</h4>
             <form action="" method="GET" class="p-2 border rounded">
                 <div class="form-group">
                     <input type="text" name="search" placeholder="Roll No" class="form-control">
