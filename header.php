@@ -39,7 +39,7 @@ switch ($page_name) {
     <!--  whole front page css  -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./help.css">
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
     <header id="header" style="position: sticky; top:0px; left:0px; z-index:1">
@@ -62,6 +62,6 @@ switch ($page_name) {
         </div>
     </header>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</script>
 
 </html>

@@ -17,7 +17,7 @@ include "header.php";
                                     <div class="row my-3">
                                         <div class="col-md-6 mb-1">
                                             <div class="form-group-sm">
-                                                <input type="text" required name="roll_no" placeholder="Roll No" id="roll_no" class="form-control">
+                                                <input type="text" require name="roll_no" placeholder="Roll No" id="roll_no" class="form-control">
                                                 <small id="stdRollNO" class="font-weight-bold"></small>
                                             </div>
                                         </div>
@@ -98,7 +98,7 @@ include "header.php";
                                         </div>
                                         <div class="col-md-6 mb-1">
                                             <div class="form-group-sm">
-                                               <input type="text" placeholder="Fsc Marks" name="fscMarks"  class="form-control">
+                                                <input type="text" placeholder="Fsc Marks" name="fscMarks" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -119,8 +119,8 @@ include "header.php";
                                                     <?php
                                                     $add_query = "SELECT * FROM address";
                                                     $add_res   = mysqli_query($conn, $add_query);
-                                                    while($add_row = mysqli_fetch_assoc($add_res)){
-                                                        echo '<option value="'.$add_row["add_id"].'">'.$add_row["location"].'</option>';
+                                                    while ($add_row = mysqli_fetch_assoc($add_res)) {
+                                                        echo '<option value="' . $add_row["add_id"] . '">' . $add_row["location"] . '</option>';
                                                     }
                                                     ?>
                                                     <option value="Others">Others</option>
@@ -152,64 +152,3 @@ include "header.php";
     </div>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(() => {
-        $("#others").css("display", "none");
-    //    -----option juquery--
-    $("#address").change(function(){
-        var selectedAdd = $(this).children("option:selected").text();
-        if(selectedAdd == "Others"){
-            $("#others").css("display", "block");
-        
-        }
-        else{
-            $("#others").css("display", "none");
-        }
-    })
-    //    -----option juquery--
-        $("#button").click(() => {
-            var phone = $("#phone").val();
-            var cnic  = $("#cnic").val();
-            var cnicMIddle = cnic.slice(cnic.indexOf("-") + 1, cnic.lastIndexOf("-"))
-            var cnicLast = cnic.substr(cnic.lastIndexOf("-")+1, 1)
-
-            if (phone == "") {
-                $("#stdphone").html("Inter a valid phone");
-                return false;
-            } 
-             if (isNaN(phone)) {
-                $("#stdphone").html("Inter a valid phone");
-                return false;
-            } else if (phone.length !== 11) {
-                $("#stdphone").html("Inter a valid phone");
-                return false;
-            } 
-            // cnic validation coding--
-            else if (cnic == ""){
-                $("#stdcnic").html("Enter Your cnic");
-             return false;
-            } 
-         else if((isNaN(cnicFirst)) || (isNaN(cnicMIddle)) || (isNaN(cnicLast))){
-             $("#stdcnic").html("Cnic must be in nubmers");
-             return false;
-            }
-            else if(cnic.charAt(cnic.indexOf("-")) !=="-" || cnic.charAt(cnic.lastIndexOf("-")) !== "-")
-            {
-                $("#stdcnic").html("Enter a Valid Cnic");
-                return false;
-            }
-            else if(cnicFirst.length !== 5 || cnicMIddle.length !== 7 || cnicLast.length !== 1){
-                $("#stdcnic").html("Cnic must in numbers");
-                 return false;
-            }
-            else if(cnic.length() !== 14){
-                $("#stdcnic").html("Cnic lenght Must be 14 number including special characters hyphens");
-                return false;
-            }
-            // cnic validation coding--
-            else {
-                return true;
-            }
-        });
-    });
-</script>

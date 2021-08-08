@@ -17,11 +17,11 @@ if (isset($_POST["submit"])) {
     $img     = $_FILES["img"]["name"];
     $tmp_name  = ($_FILES["img"]["tmp_name"]);
     $file_size = $_FILES["img"]["size"];
-    // code for fomr validation 
+    // code for formvalidation 
     if($address == "Others"){
         $address = $_POST["others"];
     }
-    // code for fomr validation 
+    // code for form validation 
     $cnic_pattern = "/[0-9]{5}[-][0-9]{7}[-][0-9]{1}/";
     $error = [];
     $explode = explode(".", $img);
